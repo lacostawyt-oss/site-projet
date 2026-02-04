@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>مشروعي</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #info {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <button onclick="showInfo()">اضغط هنا لمعرفة المزيد</button>
+
+  <p id="info">من اعداد محمد</p>
+
+  <script>
+    function showInfo() {
+      document.getElementById("info").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
